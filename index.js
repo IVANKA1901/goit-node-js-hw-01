@@ -1,6 +1,8 @@
 const { Command } = require("commander");
-const program = new Command();
+
 const contacts = require("./contacts");
+
+const program = new Command();
 
 const invokeAction = async ({ action, id, name, email, phone }) => {
   switch (action) {
